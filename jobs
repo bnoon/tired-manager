@@ -1,0 +1,6 @@
+/ echo Done
+/slow sleep 5
+/veryslow sleep 15
+/jobs cat jobs
+/root ls -l /
+/error cat /missing
