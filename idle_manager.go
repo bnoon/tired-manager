@@ -80,7 +80,6 @@ func (p *IdleManager) Handle(ctx context.Context) http.Handler {
 	r := chi.NewRouter()
 	jobs := loadJobs("jobs")
 	tokens := loadTokens()
-	log.Println(tokens)
 
 	r.Use(CheckBearer(tokens))
 	r.Use(middleware.Logger)
